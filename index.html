@@ -319,41 +319,57 @@
 
 
         <!-- Project 2 -->
-        <div class="project">
+       <div class="project">
 
-            <h3>AWS Multi-Tier Architecture</h3>
+    <h3>☁️ AWS Multi-Tier Architecture</h3>
 
-            <p>
-                Designed and deployed a multi-tier AWS architecture using
-                public and private subnets, Internet Gateway, NAT Gateway
-                and a bastion server.
-            </p>
+    <p>
+        Designed and implemented a multi-tier architecture on AWS
+        using public and private EC2 instances. The architecture
+        separates resources into different network layers and
+        provides controlled internet access to private resources.
+    </p>
 
-            <p>
-                <strong>Technologies:</strong>
-                AWS EC2, VPC, Subnets, Internet Gateway,
-                NAT Gateway, Bastion Host
-            </p>
+    <p>
+        <strong>Architecture:</strong>
+    </p>
 
-        </div>
+    <div class="workflow">
+        Internet
+        →
+        Internet Gateway
+        →
+        Public Subnet
+        →
+        Bastion Host
+        →
+        Private Subnet
+        →
+        Private EC2 Instances
+    </div>
 
+    <p>
+        <strong>AWS Services & Technologies:</strong>
+        EC2, VPC, Public Subnets, Private Subnets,
+        Internet Gateway, NAT Gateway, Bastion Host
+    </p>
 
-        <!-- Project 3 -->
-        <div class="project">
+    <p>
+        <strong>Key Implementation:</strong>
+    </p>
 
-            <h3>Dockerized Web Application</h3>
+    <ul>
+        <li>Created a custom VPC with public and private subnets.</li>
+        <li>Configured Internet Gateway for internet connectivity.</li>
+        <li>Configured NAT Gateway to provide outbound internet access to private resources.</li>
+        <li>Created EC2 instances across public and private subnets.</li>
+        <li>Configured a bastion host for secure access to private instances.</li>
+        <li>Configured routing between the different network layers.</li>
+    </ul>
 
-            <p>
-                Containerized a web application using Docker and deployed
-                the application inside a Docker container.
-            </p>
+    </div>
 
-            <p>
-                <strong>Technologies:</strong>
-                Docker, Dockerfile, Linux
-            </p>
-
-        </div>
+       
 
     </section>
 
